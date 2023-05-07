@@ -1,4 +1,4 @@
-baseURL = "https://satooru65536.github.io/hugo-simple-profile"
+baseURL = "/hugo-simple-profile/"
 title = "SatooRu's Profile"
 author = "Steve Francia"
 copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
