@@ -1,0 +1,71 @@
+:root {
+    font-size: 10px;
+
+    --primary: #248aaa;
+    --secoundary: #8392a5;
+    --secoundary-dark: #1c2d41;
+    --background: #f9fafc;
+    --background-light: #ffffff;
+    --background-dark: #e5e9f2;
+
+    --text: #000000;
+    --text-light: #ffffff;
+
+    --cyan: #2dcad5;
+    --blue: #048dff;
+    --red: #ff7c7c;
+    --orange: #ffaf73;
+    --yellow: #fff155;
+    --green: #2dca73;
+    --pink: #ffafe0;
+
+    --switch-size: 750px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+}
+
+p,
+a,
+span {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: var(--text);
+}
+
+h1 {
+    font-size: 3.4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.7rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.6rem;
+}
+
+#content {
+    margin-top: 70px;
+    /* TODO */
+    min-height: calc(100vh);
+}
