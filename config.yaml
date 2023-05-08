@@ -1,0 +1,25 @@
+baseURL: "https://satooru.me/"
+title: "SatooRu's Profile"
+author: "SatooRu"
+copyright: "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
+paginate: 3
+languageCode: "ja"
+DefaultContentLanguage: "ja"
+uglyURLs: true
+theme: "satooru"
+
+params:
+  github:
+    id: "SatooRu65536"
+
+  twitter:
+    id: "SatooRu_65536"
+
+  header:
+    title: "SatooRu's Profile"
+    themeToggle: true
+
+  top:
+    icon: "images/icon.png"
+    author: "SatooRu"
+    text: "Hi, There🐣"

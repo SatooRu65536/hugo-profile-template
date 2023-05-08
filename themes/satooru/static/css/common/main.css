@@ -40,6 +40,10 @@ span {
     color: var(--text);
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-size: 3.4rem;
 }
@@ -65,7 +69,7 @@ h6 {
 }
 
 #content {
-    margin-top: 70px;
+    margin-top: 52px;
     /* TODO */
     min-height: calc(100vh);
 }

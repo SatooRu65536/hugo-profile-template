@@ -1,0 +1,7 @@
+.section-light {
+    background-color: var(--background-light);
+}
+
+.section-dark {
+    background-color: var(--background-dark);
+}

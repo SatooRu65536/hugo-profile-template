@@ -1,7 +1,4 @@
 +++
-author = "Hugo Authors"
-title = "satooru"
-subtitle = "satooru"
+author = "SatooRu"
+title = "Hi, There🐣"
 +++
-
-hi
