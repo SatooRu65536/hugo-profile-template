@@ -1,7 +1,7 @@
 baseURL: "https://satooru.me/"
 title: "SatooRu's Profile"
 author: "SatooRu"
-copyright: "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
+copyright: "SatooRu © 2022 Copyright."
 paginate: 3
 languageCode: "ja"
 DefaultContentLanguage: "ja"

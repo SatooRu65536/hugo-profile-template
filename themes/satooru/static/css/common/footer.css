@@ -1,0 +1,80 @@
+#footer {
+    width: 100%;
+    padding: 40px 20px 20px;
+    color: var(--secoundary);
+    background-color: var(--secoundary-dark);
+}
+
+#footer .nav-area {
+    padding: 0 80px;
+    display: flex;
+}
+
+#footer .container {
+    width: 33%;
+}
+
+#footer .container ul li {
+    margin-top: 15px;
+    list-style: none;
+    transform: translate(0px);
+    transition: all .5s;
+}
+
+#footer .container ul li a {
+    color: var(--secoundary);
+}
+
+#footer .container ul li:hover {
+    transform: translate(5px);
+}
+
+#footer .container ul li:hover a {
+    text-decoration: underline;
+}
+
+#footer .container .icon-container {
+    display: block;
+    margin-top: 15px;
+    transform: translate(0px);
+    transition: all .5s;
+}
+
+#footer .container .icon-container:hover {
+    transform: translate(5px);
+}
+
+#footer .container .icon-containerspan {
+    transition: all .5s;
+}
+
+#footer .container .icon-container:hover span {
+    text-decoration: underline;
+}
+
+#footer .container .icon-container .svgicon {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: var(--secoundary);
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#footer .container .icon-container span {
+    color: var(--secoundary);
+    height: fit-content;
+    width: fit-content;
+    line-height: 25px;
+}
+
+#footer hr {
+    margin: 20px 0;
+    border-width: 0.5px;
+    border-color: var(--secoundary);
+}
+
+#footer .copyright {
+    color: var(--secoundary);
+    text-align: center;
+}

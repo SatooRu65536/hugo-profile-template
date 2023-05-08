@@ -4,7 +4,7 @@
   
   {{ $sections:= site.Data.sections }}
   {{ if (index site.Data site.Language.Lang).sections }}
-  {{ $sections = (index site.Data site.Language.Lang).sections }}
+    {{ $sections = (index site.Data site.Language.Lang).sections }}
   {{ end }}
   
   {{ if $sections }}
