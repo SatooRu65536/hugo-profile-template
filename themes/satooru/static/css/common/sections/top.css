@@ -36,11 +36,24 @@
     width: fit-content;
     margin-bottom: 5px;
     display: block;
+    position: relative;
+    transition: all .5s ease;
+    transform: scale(1);
+}
+
+#home-page .top-container .external-link a:hover {
+    transform: scale(0.95);
 }
 
 #home-page .top-container .external-link a span {
     line-height: 30px;
     vertical-align: bottom;
+    color: var(--text);
+    transition: all .5s;
+}
+
+#home-page .top-container .external-link a:hover span {
+    color: var(--secoundary);
 }
 
 #home-page .top-container .icon {
