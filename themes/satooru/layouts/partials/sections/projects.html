@@ -12,7 +12,7 @@
     </div>
 
     {{ if .repo }}
-      <a class="github" href="{{ .url }}" title="github">
+      <a class="github" href="{{ .repo }}" target="_blank" title="github">
         {{ partial "icons/ionicons" (dict "logoname" "logo-github" "class" "svgicon") }}
       </a>
     {{ end }}
