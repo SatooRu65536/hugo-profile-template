@@ -12,7 +12,7 @@
     {{ range sort $sections "section.weight" }}
       {{ if .section.enable }}
         <div class="section-{{ $bg }}">
-          {{- partial (printf "sections/%s.html" .section.id) -}}
+          {{- partial (printf "sections/%s.html" (replace (lower .section.id) " " "-")) . -}}
         </div>
 
         {{ if eq $bg "dark" }}

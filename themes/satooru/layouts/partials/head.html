@@ -1,7 +1,3 @@
-<link rel="stylesheet" href="{{ "css/common/main.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/common/header.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/common/footer.css" | relURL }}">
-
-<link rel="stylesheet" href="{{ "css/common/index.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/common/sections/top.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/common/sections/about.css" | relURL }}">
+{{ $sass := resources.Get "css/style.scss" }}
+{{ $style := $sass | resources.ToCSS | minify | resources.Fingerprint "sha256" }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">

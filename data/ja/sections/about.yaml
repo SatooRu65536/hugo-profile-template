@@ -7,6 +7,7 @@ section:
   showOnNavbar: true
   template: sections/about.html
 
+name: SatooRu
 # your designation
 designation: student
 # your company information
@@ -19,7 +20,9 @@ company:
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: "情報科の大学生<br>プログラミングが好きで主にフロントエンドをしています。ペンギンや鯨類、城・歴史がめっちゃすき。"
+summary:
+  - "情報科の大学生"
+  - "プログラミングが好きで主にフロントエンドをしています。ペンギンや鯨類、城・歴史がめっちゃすき。"
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -46,7 +49,7 @@ socialLinks:
 # Show your badges
 # You can show your verifiable certificates from https://www.credly.com.
 # You can also show a circular bar indicating the level of expertise on a certain skill
-badges:
+# badges:
 # - type: certification
 #   name: Certified Kubernetes Security Specialist
 #   url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
