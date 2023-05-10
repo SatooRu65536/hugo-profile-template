@@ -1,13 +1,11 @@
 #soft-skills {
-  display: flex;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 
   .progress {
     max-width: 33.33%;
     display: inline-block;
     text-align: center;
     position: relative;
-    flex: 0 0 33.33%;
 
     & > .circle {
       display: inline-block;

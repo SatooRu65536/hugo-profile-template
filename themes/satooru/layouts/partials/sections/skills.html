@@ -1,3 +1,9 @@
-<div class="skills-container">
-    skills
+<h1 class="title">{{ .section.name }}</h1>
+<div id="skills-container">
+    {{ range .skills }}
+    <div class="card">
+        <div class="title">{{ .name }}</div>
+        <div class="summary">{{ .summary }}</div>
+    </div>
+    {{ end }}
 </div>
