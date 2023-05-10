@@ -21,6 +21,7 @@ _testmain.go
 
 *.exe
 *.test
+*.env
 
 /public
 .DS_Store

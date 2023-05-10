@@ -1,3 +1,21 @@
-<div class="project-container">
-    project
+<h1 class="title">{{ .section.name }}</h1>
+<div id="project-container">
+  {{ range .projects }}
+  <div class="project">
+    <div class="title">{{ .name }}</div>
+    <div class="summary">{{ .summary }}</div>
+
+    <div class="tags">
+      {{ range .tags }}
+      <div class="tag">{{ . }}</div>
+      {{ end }}
+    </div>
+
+    {{ if .repo }}
+      <a class="github" href="{{ .url }}" title="github">
+        {{ partial "icons/ionicons" (dict "logoname" "logo-github" "class" "svgicon") }}
+      </a>
+    {{ end }}
+  </div>
+  {{ end }}
 </div>

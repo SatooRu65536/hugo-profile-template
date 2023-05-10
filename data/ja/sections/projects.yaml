@@ -1,31 +1,23 @@
-# section information
 section:
   name: Active Projects
   id: projects
   enable: true
   weight: 5
   showOnNavbar: true
-  # Can optionally hide the title in sections
-  # hideTitle: true
 
-# filter buttons
-buttons:
-  - name: All
-    filter: all
-  - name: Programming
-    filter: programming
-  - name: 0ther
-    filter: other
-
-# your projects
 projects:
   - name: センシング
     timeline: "2023.4 -"
     repo: https://github.com/SatooRu65536/kajilab
     summary: 梶研究室での活動
-    tags: ["programming", "python", "sensing"]
+    tags:
+      - "python"
+      - "sensing"
 
   - name: シフト集計アプリ
     timeline: "2023.4 -"
     summary: LINEBOTから希望シフトを提出したい
-    tags: ["programming", "javascript", "nextjs", "linebot"]
+    tags:
+      - javascript
+      - nextjs
+      - linebot
