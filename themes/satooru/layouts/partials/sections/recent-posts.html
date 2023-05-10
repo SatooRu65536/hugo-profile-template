@@ -1,5 +1,5 @@
 <h1 class="title">{{ .section.name }}</h1>
-<div id="recent-posts-container">
+<div id="{{ .section.id }}">
   {{ range first 3 site.RegularPages.ByDate.Reverse }}
   <a class="card" href="{{ .RelPermalink }}" title="{{ .Title }}">
     <div class="header">

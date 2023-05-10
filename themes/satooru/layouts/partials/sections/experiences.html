@@ -1,5 +1,5 @@
 <h1 class="title">{{ .section.name }}</h1>
-<div id="experiences-container">
+<div id="{{ .section.id }}">
   {{ range $index, $experience := sort .experiences "company.start" "desc" }}
   {{  $company := $experience.company }}
     <div class="card">

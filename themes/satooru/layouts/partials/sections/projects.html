@@ -1,5 +1,5 @@
 <h1 class="title">{{ .section.name }}</h1>
-<div id="project-container">
+<div id="{{ .section.id }}">
   {{ range .projects }}
   <div class="project">
     <div class="title">{{ .name }}</div>
