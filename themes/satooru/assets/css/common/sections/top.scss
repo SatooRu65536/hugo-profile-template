@@ -9,8 +9,6 @@
     justify-content: center;
     background-color: var(--background);
 
-    background-image: var();
-
     .title {
       position: relative;
 
@@ -33,7 +31,7 @@
       a {
         height: fit-content;
         width: fit-content;
-        margin-bottom: 5px;
+        margin: 0 auto 5px;
         display: block;
         position: relative;
         transition: all 0.5s ease;
