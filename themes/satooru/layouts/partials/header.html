@@ -78,37 +78,43 @@
 </div>
 
 <script>
-  if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark');
-    document.getElementById('toggle-theme').classList.add('dark');
+  // カラーテーマを変更する
+  function changeTheme(mode) {
+    localStorage.setItem('theme', mode);
+    document.documentElement.setAttribute('theme', mode);
+    
+    if (mode === 'dark') {
+      document.body.classList.add('dark');
+      document.getElementById('toggle-theme').classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+      document.getElementById('toggle-theme').classList.remove('dark');
+    }
   }
 
+  // テーマの初期化
+  const isDarkMedia = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const isDarkTheme = localStorage.getItem('theme') === 'dark';
+  if (isDarkMedia || isDarkTheme) changeTheme('dark');
+
+  // テーマ変更ボタンの検知
   const toggle = document.getElementById('toggle-theme');
   toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-
-    if (document.body.classList.contains('dark')) {
-      toggle.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      toggle.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
+    if (document.body.classList.contains('dark')) changeTheme('light');
+    else changeTheme('dark');
   });
 
+  // ハンバーガーメニューの検知
   const hamburger = document.getElementById('hamburger');
   hamburger.addEventListener('click', () => {
     document.getElementById('drawer').classList.toggle('open');
     hamburger.classList.toggle('active');
   });
 
+  // スクロール時のヘッダーの影の検知
   document.addEventListener('scroll', (e) => {
     const header = document.getElementById('header');
-
-    if (window.scrollY < 5) {
-      header.classList.remove('shadow');
-    } else {
-      header.classList.add('shadow');
-    }
-  })
+    if (window.scrollY < 5) header.classList.remove('shadow');
+    else header.classList.add('shadow');
+  });
 </script>

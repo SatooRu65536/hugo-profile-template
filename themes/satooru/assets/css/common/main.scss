@@ -20,6 +20,18 @@
   --pink: #ffafe0;
 
   --switch-size: 750px;
+
+  &[theme="dark"] {
+    --primary: #248aaa;
+    --secoundary: #8392a5;
+    --secoundary-dark: #154e8e;
+    --background: #636363;
+    --background-light: #595959;
+    --background-dark: #111111;
+
+    --text: #ffffff;
+    --text-light: #000000;
+  }
 }
 
 * {
@@ -28,6 +40,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   scroll-padding-top: 150px;
+  color: var(--text);
 }
 
 body {
@@ -72,6 +85,4 @@ h6 {
 
 #content {
   margin-top: 52px;
-  /* TODO */
-  min-height: calc(100vh);
 }
