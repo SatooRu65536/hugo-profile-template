@@ -1,0 +1,43 @@
+<header id="header-2">
+  <nav>
+    {{- $label_text := (.Site.Params.header.title | default .Site.Title) }}
+    <a class="title" href="{{ "" | absLangURL }}" title="{{ $label_text }}">
+      {{- $label_text -}}
+    </a>
+
+    <div id="hamburger-2">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  // カラーテーマを変更する
+  function changeTheme(mode) {
+    localStorage.setItem('theme', mode);
+    document.documentElement.setAttribute('theme', mode);
+
+    if (mode === 'dark') {
+      document.body.classList.add('dark');
+      document.getElementById('toggle-theme').classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+      document.getElementById('toggle-theme').classList.remove('dark');
+    }
+  }
+
+  // テーマの初期化
+  const isDarkMedia = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const isDarkTheme = localStorage.getItem('theme') === 'dark';
+  if (isDarkMedia || isDarkTheme) changeTheme('dark');
+
+  // ハンバーガーメニューの検知
+  const hamburger = document.getElementById('hamburger-2');
+  hamburger.addEventListener('click', () => {
+    document.getElementById('card-container').classList.toggle('active');
+    document.getElementById('drawer-2').classList.toggle('open');
+    hamburger.classList.toggle('active');
+  });
+</script>

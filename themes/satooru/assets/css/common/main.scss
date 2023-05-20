@@ -45,7 +45,7 @@
 }
 
 body {
-  background-color: var(--background);
+  background-color: var(--background-dark);
 }
 
 p,
@@ -86,4 +86,5 @@ h6 {
 
 #content {
   margin-top: 52px;
+  height: 100vh;
 }

@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div id="posts-list">
+  <div class="card-container" id="card-container">
+    {{ range site.RegularPages.ByDate.Reverse }}
+    <div class="card" href="{{ .RelPermalink }}" title="{{ .Title }}">
+      <div class="header">
+        <img class="img-top" src="{{ partial "misc/get-hero.html" . }}" alt="Card image cap" />
+      </div>
+
+      <div class="body">
+        <p class="card-title">{{ .Title }}</p>
+        <p class="summary">{{ .Summary }}</p>
+      </div>
+
+      <div class="footer">{{ .Date.Format "2006 1/2" }}</div>
+    </div>
+    {{ end }}
+  </div>
+
+  <div id="drawer-2">
+    <div id="sidebar">
+      {{ partial "misc/sidebar.html" (dict "menuItems" site.Menus.sidebar "ctx" .) }}
+    </div>
+    <div>
+    </div>
+
+    <script>
+      function openList(icon) {
+        const li = icon.parentElement;
+        const line = icon.getElementsByTagName("span");
+
+        if (li.dataset.isopen == "true") {
+          line[0].style.transform = "rotate(90deg) translate(-1px, 5px)";
+          li.style.height = "2.5rem";
+          li.dataset.isopen = "false";
+        } else {
+          line[0].style.transform = "translate(-50%, -50%)";
+          li.style.height = "auto";
+          li.dataset.isopen = "true";
+        }
+      }
+    </script>
+    {{ end }}
