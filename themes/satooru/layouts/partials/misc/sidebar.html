@@ -12,7 +12,7 @@
     </li>
   {{ else }}
     <li>
-      <a href="{{ .PageRef | default .URL }}" title="{{ .Name }}">{{.Name}}</a>
+      <a href="{{ .URL }}" title="{{ .Name }}">{{.Name}}</a>
     </li>
   {{ end }}
 {{ end }}

@@ -7,7 +7,7 @@
     {{ range site.RegularPages.ByDate.Reverse }}
     
       {{ if eq (substr .RelPermalink 0 (len $currentPath)) $currentPath }}
-        <div class="card" href="{{ .RelPermalink }}" title="{{ .Title }}">
+        <a class="card" href="{{ .RelPermalink }}" title="{{ .Title }}">
           <div class="header">
             <img class="img-top" src="{{ partial "misc/get-hero.html" . }}" alt="Card image cap" />
           </div>
@@ -18,7 +18,7 @@
           </div>
 
           <div class="footer">{{ .Date.Format "2006 1/2" }}</div>
-        </div>
+        </a>
       {{ end }}
     {{ end }}
   </div>
