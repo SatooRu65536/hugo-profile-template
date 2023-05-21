@@ -36,8 +36,12 @@
   // ハンバーガーメニューの検知
   const hamburger = document.getElementById('hamburger-2');
   hamburger.addEventListener('click', () => {
-    document.getElementById('card-container').classList.toggle('active');
-    document.getElementById('drawer-2').classList.toggle('open');
     hamburger.classList.toggle('active');
+    document.getElementById('drawer-2').classList.toggle('open');
+
+    const cardContainer = document.getElementById('card-container');
+    const postSection = document.getElementById('post-section');
+    if (cardContainer) cardContainer.classList.toggle('active');
+    if (postSection) postSection.classList.toggle('active');
   });
 </script>

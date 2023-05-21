@@ -42,6 +42,7 @@
   scroll-padding-top: 150px;
   color: var(--text);
   transition: color .5s, background-color .5s, border-color .5s;
+  font-family: 'Mulish', sans-serif;
 }
 
 body {
@@ -86,5 +87,5 @@ h6 {
 
 #content {
   margin-top: 52px;
-  height: calc(100vh - 52px);
+  min-height: calc(100vh - 52px);
 }

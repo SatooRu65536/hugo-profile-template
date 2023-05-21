@@ -5,8 +5,22 @@ copyright: "SatooRu © 2022 Copyright."
 paginate: 3
 languageCode: "ja"
 DefaultContentLanguage: "ja"
-uglyURLs: true
+uglyURLs: false
 theme: "satooru"
+
+markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+
+  highlight:
+    codeFences: true
+    noClasses: true
+    guessSyntax: true
+    tabWidth: 4
+    lineNos: true
+    style: base16-snazzy
 
 params:
   github:
