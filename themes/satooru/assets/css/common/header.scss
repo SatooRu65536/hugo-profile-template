@@ -39,7 +39,7 @@
         position: relative;
 
         a {
-          transition: all 0.5s;
+          transition: all 0.5s ease;
           &:hover {
             color: var(--secoundary);
           }
@@ -136,7 +136,7 @@
         margin-block: 5px;
         background-color: var(--text);
         display: none;
-        transition: all 0.5s;
+        transition: all 0.5s ease;
 
         @media (max-width: 800px) {
           display: block;
@@ -156,7 +156,7 @@
   right: 0;
   left: 0;
   z-index: 100;
-  transition: all 0.8s ease;
+  transition: all 0.5s ease;
   pointer-events: none;
 
   @media (max-width: 800px) {
@@ -190,7 +190,7 @@
       padding: 10px;
       width: 100%;
       display: inline-block;
-      transition: all 0.5s;
+      transition: all 0.5s ease;
 
       &:hover {
         color: var(--blue);

@@ -12,7 +12,7 @@
     border-radius: 10px;
     background-color: var(--background);
     overflow: hidden;
-    transition: all 0.5s;
+    transition: all 0.5s ease;
 
     .header {
       height: 170px;
@@ -22,7 +22,7 @@
       .img-top {
         width: 100%;
         vertical-align: middle;
-        transition: all 0.5s;
+        transition: all 0.5s ease;
         scale: 1.2;
       }
     }

@@ -70,7 +70,6 @@
       .svgicon {
         height: 20px;
         width: 20px;
-        color: var(--background);
         display: inline-block;
         position: relative;
 
@@ -78,6 +77,10 @@
           position: absolute;
           top: 0;
           left: 0;
+
+          path {
+            color: var(--background);
+          }
         }
       }
     }

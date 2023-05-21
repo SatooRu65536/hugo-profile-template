@@ -12,7 +12,7 @@
       background-color: var(--background);
       border-radius: 5px;
       overflow: hidden;
-      transition: all 0.3s ease-out;
+      transition: all 0.3s ease;
       cursor: pointer;
 
       .header {
@@ -22,7 +22,7 @@
 
         .img-top {
           width: 100%;
-          transition: all 0.3s ease-out;
+          transition: all 0.3s ease;
         }
       }
 
