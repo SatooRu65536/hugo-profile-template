@@ -6,6 +6,10 @@
   line-height: 2.4rem;
   position: relative;
 
+  & > p {
+    margin-bottom: 0px;
+  }
+
   &::after {
     content: "";
     width: 1px;
