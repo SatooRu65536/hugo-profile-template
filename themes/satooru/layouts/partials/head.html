@@ -13,8 +13,8 @@
 {{- with .Description | default .Params.subtitle | default .Summary }}
   <meta name="twitter:description" content="{{ . | truncate 200 }}">
 {{- end }}
-{{- with .Site.Params.share_img | default .Params.image | default .Site.Params.logo }}
-  <meta name="twitter:image" content="{{ resources.Get . | absURL }}" />
+{{- with .Site.Params.share_img }}
+  <meta name="twitter:image" content="{{ resources.Get . }}" />
 {{- end }}
   <meta name="twitter:card" content="summary" />
 {{- with .Site.Author.twitter }}
