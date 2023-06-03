@@ -11,7 +11,9 @@ menu:
 ---
 
 # HUGO のインストール方法
-[ソース元](https://gohugo.io/installation/)
+[ソース元](https://gohugo.io/installation/)  
+
+[Git/GitHub のセットアップ](../git-setup/)
 
 - [MacOS](#macos)
 - [Windows](#windows)
