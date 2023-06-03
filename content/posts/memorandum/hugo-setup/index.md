@@ -7,7 +7,7 @@ menu:
     name: "Hugoのインストール"
     identifier: 2023-06-03T22:26:29+09:00
     weight: 20230603
-    parent: 2023-06
+    parent: memorandum
 ---
 
 # HUGO のインストール方法
