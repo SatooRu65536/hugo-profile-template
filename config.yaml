@@ -26,6 +26,8 @@ markup:
       unsafe: true
 
 params:
+  twitterCardEnabled: true
+  twitterCardDomain: "satooru.me"
   github:
     id: "SatooRu65536"
 
