@@ -21,6 +21,10 @@ markup:
     tabWidth: 4
     style: base16-snazzy
 
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
   github:
     id: "SatooRu65536"
