@@ -75,8 +75,23 @@
           display: inline-block;
         }
 
-        .highlight > div {
+        .highlight {
           padding: 10px 0;
+
+          code {
+            display: inline-block;
+            width: 100%;
+          }
+
+          pre {
+            width: 100%;
+            padding: 10px;
+          }
+
+          span {
+            width: 100%;
+            white-space: pre;
+          }
         }
 
         blockquote {
