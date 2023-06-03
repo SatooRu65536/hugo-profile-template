@@ -23,14 +23,14 @@ menu:
 
 
 ### オブジェクトの移動(キーボード)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TvVuvuxcTOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{{< youtube src="https://www.youtube.com/embed/TvVuvuxcTOc" />}}
 
 > this.transform.position = new Vector3(x, y,z);
 
 単純な移動はこれだけ
 
 ### 軌跡に沿ったオブジェクトの移動
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-4mBXV7yWng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{{< youtube src="https://www.youtube.com/embed/-4mBXV7yWng" />}}
 
 ```cs
 void Start() {
@@ -67,7 +67,7 @@ GIFアニメみたい
 
 
 ### 実際の時間間隔に合わせたもの
-<iframe width="560" height="315" src="https://www.youtube.com/embed/K2JixDncg1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{{< youtube src="https://www.youtube.com/embed/K2JixDncg1s" />}}
 
 実際の4倍速にしてある
 
@@ -104,8 +104,7 @@ void Update() {
 ```
 
 ### 滑らかにしたもの
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TBRMeLTtI4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+{{< youtube src="https://www.youtube.com/embed/TBRMeLTtI4c" />}}
 
 自分で実装するのは面倒だからアセット `DG.Tweening` を使用した
 ```cs

@@ -21,14 +21,14 @@
 
     <div class="container">
       {{ if .Site.Params.gitHub }}
-      <a class="icon-container" href="https://github.com/{{ .Site.Params.github.id }}" title="github">
+      <a class="icon-container" target="_blank" href="https://github.com/{{ .Site.Params.github.id }}" title="github">
         {{ partial "icons/ionicons" (dict "logoname" "logo-github" "class" "svgicon") }}
         <span>{{ .Site.Params.github.id }}</span>
       </a>
       {{ end }}
 
       {{ if .Site.Params.twitter }}
-      <a class="icon-container" href="https://github.com/{{ .Site.Params.twitter.id }}" title="twitter">
+      <a class="icon-container" target="_blank" href="https://twitter.com/{{ .Site.Params.twitter.id }}" title="twitter">
         {{ partial "icons/ionicons" (dict "logoname" "logo-twitter" "class" "svgicon") }}
         <span>{{ .Site.Params.twitter.id }}</span>
       </a>
