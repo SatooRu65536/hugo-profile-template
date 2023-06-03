@@ -19,7 +19,6 @@ markup:
     noClasses: true
     guessSyntax: true
     tabWidth: 4
-    lineNos: true
     style: base16-snazzy
 
 params:
