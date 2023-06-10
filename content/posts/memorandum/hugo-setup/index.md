@@ -13,9 +13,14 @@ menu:
 # HUGO のインストール方法
 [ソース元](https://gohugo.io/installation/)  
 
+### 目次
 - [MacOS](#macos)
 - [Windows](#windows)
+
+### 関連
 - [Git/GitHub のセットアップ](../git-setup/)
+- [Hugo勉強会 コマンドたち](../hugo_study_session/)
+- [テーマ一覧](https://themes.gohugo.io/)
 
 ## MacOS
 ### 1. brew のインストール
@@ -54,7 +59,3 @@ Homebrew x.x.xx
 
 ### 2. hugoのインストール
 > winget install Hugo.Hugo.Extended
-
-
-### Git / Github のセットアップ
-[Git/GitHub のセットアップ](../git-setup/)
