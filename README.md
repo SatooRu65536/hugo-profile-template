@@ -8,7 +8,7 @@ hugo new posts/activity-report/$(date +'%Y-%m')/title/index.md
 
 ## start development server
 ```shell
-hugo server -D
+hugo server -D 
 ```
 
 ## LICENSE
